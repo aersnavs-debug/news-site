@@ -1,76 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodNews — Новости гастрономии</title>
     <link rel="stylesheet" href="style.css">
-    <title>Новости из мира еды</title>
-    <meta name="description"
-    content="Последние новости из мира еды.">
-    <meta name="keywords"
-    content="еда, новости про еду, десерты, пицца, паста, бургер.">
-    <meta name="author"
-    content="ПО-245"> 
 </head>
 <body>
-    <h1>Главные новости из мира еды</h1>
 
-    <div class="news">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500"
-             alt="Пицца">
-            <h3>Секреты идеальной итальянской пиццы</h3>
-            <p>Шеф-повара раскрыли секретный ингредиент пышного и хрустящего теста для настоящей неаполитанской пиццы.</p>
-            <div class="date">28 сентября 2026</div>
-            <a href="#">Подробнее</a>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🍕</span>
+                <span class="logo-title">FoodNews</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="active">Главная</a>
+                <a href="#">Рецепты</a>
+                <a href="#">Рестораны</a>
+                <a href="#">ЗОЖ</a>
+                <a href="#">Тренды</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Поиск новостей...">
+                <button class="search-btn">🔍</button>
+            </div>
         </div>
+    </header>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500"
-             alt="Салат">
-            <h3>Тренды правильного питания 2026</h3>
-            <p>Узнайте, какие боул-салаты и суперфуды стали самыми популярными среди сторонников здорового образа жизни.</p>
-            <div class="date">27 сентября 2026</div>
-            <a href="#">Подробнее</a>
-        </div>
+    <div class="container content">
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500"
-            alt="Десерт">
-            <h3>Фестиваль десертов в центре города</h3>
-            <p>Лучшие кондитеры страны представят авторские торты, круассаны и экзотическое выпечное мороженое.</p>
-            <div class="date">25 сентября 2026</div>
-            <a href="#">Подробнее</a>
-        </div>
+        <main class="news">
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500"
-             alt="Кофе">
-            <h3>Как выбрать идеальный кофе</h3>
-            <p>Простое гид-руководство по сортам арабики, степени обжарки и способам альтернативного заваривания дома.</p>
-            <div class="date">24 сентября 2026</div>
-            <a href="#">Подробнее</a>
-        </div>
+            <article class="news-card main-news">
+                <div class="card-img-wrapper">
+                    <img src="images/news1.jpg" alt="Пицца">
+                    <span class="category">Главная тема</span>
+                </div>
+                <div class="card-content">
+                    <div class="date">30 сентября 2026</div>
+                    <h3>Секреты идеальной итальянской пиццы от лучших шеф-поваров Неаполя</h3>
+                    <p>Шеф-повара раскрыли секретный ингредиент пышного и хрустящего теста, а также правильную температуру выпекания в дровяной печи для достижения идеального вкуса.</p>
+                    <a href="#" class="btn">Читать далее</a>
+                </div>
+            </article>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500"
-             alt="Бургер">
-            <h3>Революция растительного мяса</h3>
-            <p>Новое поколение веганских бургеров по вкусу и текстуре стало неотличимо от сочной мраморной говядины.</p>
-            <div class="date">22 сентября 2026</div>
-            <a href="#">Подробнее</a>
-        </div>
+            <article class="news-card">
+                <div class="card-img-wrapper">
+                    <img src="images/news2.jpg" alt="Салат">
+                    <span class="category">ЗОЖ</span>
+                </div>
+                <div class="card-content">
+                    <div class="date">29 сентября 2026</div>
+                    <h3>Тренды правильного питания 2026 года</h3>
+                    <p>Узнайте, какие боул-салаты и суперфуды стали наиболее популярными среди диетологов.</p>
+                    <a href="#" class="btn">Читать</a>
+                </div>
+            </article>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500"
-             alt="Паста">
-            <h3>Паста за 15 минут: быстрый ужин</h3>
-            <p>Пять простых рецептов пасты с соусом из томатов, базилика и свежего сыра пармезан на каждый день.</p>
-            <div class="date">20 сентября 2026</div>
-            <a href="#">Подробнее</a>
-        </div>
+            <article class="news-card">
+                <div class="card-img-wrapper">
+                    <img src="images/news3.jpg" alt="Десерты">
+                    <span class="category">События</span>
+                </div>
+                <div class="card-content">
+                    <div class="date">28 сентября 2026</div>
+                    <h3>Фестиваль авторских десертов</h3>
+                    <p>Лучшие кондитеры страны представят уникальные торты и круассаны в центре города.</p>
+                    <a href="#" class="btn">Читать</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="card-img-wrapper">
+                    <img src="images/news4.jpg" alt="Кофе">
+                    <span class="category">Напитки</span>
+                </div>
+                <div class="card-content">
+                    <div class="date">27 сентября 2026</div>
+                    <h3>Гид по спешелти кофе</h3>
+                    <p>Как правильно выбирать зерна, различать обжарку и заваривать кофе дома.</p>
+                    <a href="#" class="btn">Читать</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="card-img-wrapper">
+                    <img src="images/news1.jpg" alt="Бургер">
+                    <span class="category">Инновации</span>
+                </div>
+                <div class="card-content">
+                    <div class="date">26 сентября 2026</div>
+                    <h3>Растительное мясо будущего</h3>
+                    <p>Новое поколение веганских бургеров по вкусу стало неотличимо от говядины.</p>
+                    <a href="#" class="btn">Читать</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="card-img-wrapper">
+                    <img src="images/news2.jpg" alt="Паста">
+                    <span class="category">Рецепты</span>
+                </div>
+                <div class="card-content">
+                    <div class="date">25 сентября 2026</div>
+                    <h3>Быстрая паста за 15 минут</h3>
+                    <p>Простой рецепт вкусного ужина со свежим пармезаном и сочными томатами.</p>
+                    <a href="#" class="btn">Читать</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="card-img-wrapper">
+                    <img src="images/news3.jpg" alt="Суши">
+                    <span class="category">Азия</span>
+                </div>
+                <div class="card-content">
+                    <div class="date">24 сентября 2026</div>
+                    <h3>Секреты японской кухни</h3>
+                    <p>Мастера суши рассказали, как правильно выбирать свежую рыбу и соусы.</p>
+                    <a href="#" class="btn">Читать</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="card-img-wrapper">
+                    <img src="images/news4.jpg" alt="Завтраки">
+                    <span class="category">Советы</span>
+                </div>
+                <div class="card-content">
+                    <div class="date">23 сентября 2026</div>
+                    <h3>Идеальный полезный завтрак</h3>
+                    <p>Пять вариантов сбалансированных блюд для энергичного начала продуктивного дня.</p>
+                    <a href="#" class="btn">Читать</a>
+                </div>
+            </article>
+
+        </main>
+
+        <aside class="sidebar">
+            <h2 class="sidebar-title">🔥 Популярное</h2>
+            <div class="popular-list">
+                <a href="#" class="popular-item">
+                    <span class="popular-num">1</span>
+                    <div class="popular-text">
+                        <h4>Рейтинг лучших ресторанов 2026 года</h4>
+                        <span class="date">30 сентября</span>
+                    </div>
+                </a>
+                <a href="#" class="popular-item">
+                    <span class="popular-num">2</span>
+                    <div class="popular-text">
+                        <h4>Как заварить идеальный чашку чая матча</h4>
+                        <span class="date">29 сентября</span>
+                    </div>
+                </a>
+                <a href="#" class="popular-item">
+                    <span class="popular-num">3</span>
+                    <div class="popular-text">
+                        <h4>Топ-5 соусов для домашней выпечки</h4>
+                        <span class="date">28 сентября</span>
+                    </div>
+                </a>
+                <a href="#" class="popular-item">
+                    <span class="popular-num">4</span>
+                    <div class="popular-text">
+                        <h4>История происхождения традиционного круассана</h4>
+                        <span class="date">27 сентября</span>
+                    </div>
+                </a>
+                <a href="#" class="popular-item">
+                    <span class="popular-num">5</span>
+                    <div class="popular-text">
+                        <h4>Полезны ли ферментированные продукты?</h4>
+                        <span class="date">26 сентября</span>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
